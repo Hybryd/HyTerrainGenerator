@@ -12,7 +12,7 @@
 
 /*
   Hybryd-
-  28-01-12
+  28-01-2012
   
   
   Terrain generator
@@ -94,16 +94,8 @@ int main(int argc, char ** argv)
     // Save in the file "out"
     std::cout << "Saving data..." << std::endl;
     f << g << std::endl;
-    std::cerr << "koko" << std::endl;
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    g.smooth();
-    std::cerr << "kokonut" << std::endl;
+    for (int i =0; i<8; ++i)
+      g.smooth();
     ff << g << std::endl;
     
     f.close();

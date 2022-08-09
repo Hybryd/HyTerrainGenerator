@@ -233,7 +233,7 @@ void Grid::lakify(float z)
 
 
 /*
-  Mean of the 8 neigbors
+  Mean of the 8 neighbors
   A B A B
   D C D C
   A B A B
@@ -313,13 +313,13 @@ std::ostream & operator<<(std::ostream & out, Grid & g)
     for(int j=0;j<g.gridd()[i].size();++j)
     {
     // AFFICHAGE POUR GNUPLOT
-/*
+//*
         out << (* (g.gridd()[i][j])->A()) << std::endl << (* (g.gridd()[i][j])->B()) << std::endl << std::endl << (* (g.gridd()[i][j])->D()) << std::endl << (* (g.gridd()[i][j])->C()) << std::endl << std::endl << std::endl;
 //*/
 
 
     // AFFICHAGE POUR CAMERA3D
-///*
+/*
     if(g.gridd()[i][j]->isLake())
     {
       out << "-water";
